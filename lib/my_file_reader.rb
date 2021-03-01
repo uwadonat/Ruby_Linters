@@ -14,7 +14,7 @@ class File_reader
       @all_file = []
       @class_name = []
    end
-
+   
    def file_reader
     @file_path = File.open("../my_file.rb", "r") do |file|
         until counter >= file.size 
@@ -32,8 +32,14 @@ class File_reader
     file_display
     puts "-------------------------------------"
     puts "let's check file line by line".colorize(:light_yellow)
-    # check_valid_class_name
+    check_valid_class_name
     check_space
+    # check_undefined_variables
+   end
+
+   def file_display
+    file_reader
+    puts @all_file
    end
 
    # check if class name is valid
@@ -58,24 +64,38 @@ class File_reader
    def check_space
     file_reader
     @all_file.each_with_index do |line, index|
-      
       if line.strip.split(' ').include?('+')
-        before = line.strip.split(' ')[index - 1]
-        after = line.strip.split(' ')[index + 1]
-        if before == ' ' || after == ' ' 
-          puts "line error" 
-        else
-          puts "no offences found".colorize(:blue)
+        before = line.strip.split('')[index - 1]
+        after = line.split('')[index + 1]
+        if before ==' ' 
+          puts "line:#{index}: put space before operator".colorize(:light_red) 
         end
+        if after ==' '
+          puts "line:#{index}: put space after operator".colorize(:light_red) 
+        end
+        
       end
     end
     
    end
 
-   def file_display
-     file_reader
-     puts @all_file
+
+   def check_undefined_variables
+    file_reader
+    @all_file.each_with_index do |line, index|
+      if line.strip.split(' ').include?('+')
+        after = line.strip.split(' ')[2]
+        if after.match?(/[A-Za-z]/) && !defined?(after)
+        puts "you are done"
+        # puts "line:#{index + 1}: class name must be capitalized. change to: #{@class_name.colorize(:light_red)}" 
+        else
+          puts "no offences found".colorize(:blue)
+        end
+      end
+    end
    end
+
+   
 
    
 

@@ -1,12 +1,12 @@
 
 # class to compute a sum
-class xample
+class sample
   def hello
     puts 'Hello Ruby!'
     puts "calculate sum of two numbers"
     a = 4
     b = 10
-    c = a + b 
+    c = a + b
     puts c
   end
 end
