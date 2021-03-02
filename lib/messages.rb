@@ -1,11 +1,11 @@
 # class for error messages
 class Messages
-  attr_reader :bad_filename, :empty_line, :space_operator, :class_name_error
+  attr_reader :bad_classname, :empty_line, :space_operator, :line_length, :incomplete_tag
 
   def initialize
-      @bad_filename = 'Use Snake case format to file name.'
-      @empty_line = 'there empty line at line'
-      @space_operator = 'use space before and after operator'
-      @class_name_error = 'use Camel Case format for class Name.'
+    @bad_classname = 'class name must be capitalized.'
+    @empty_line = 'this is an extra empty line.'
+    @incomplete_tag = 'there is incomplete tag on this line'
+    @line_length = ' line must contain not more than 30 character'
   end
 end
