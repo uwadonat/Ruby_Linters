@@ -1,3 +1,13 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+![screenshot]()
+
+Additional description of the project and its features.
+
+## Built With
+
+- Ruby
+- RSpec
 # Ruby_Linters
 In this project we buld linters for testing Ruby file## 🛠 Installing <a name = "installing"></a>
 
@@ -67,13 +77,13 @@ First line of the program should not be empty and no empty line allowed between 
 
 ```
 # bad
-
+|  <-- empty line 
 class Sample
   def hello
     puts 'Hello Ruby'
 
-
-
+|  <-- empty line
+|
     puts 'calculate sum of two numbers'
     a = 4
     b = 10
@@ -96,4 +106,33 @@ puts "Hello Ruby
 # good
 puts "Hello Ruby"
 ```
+#### Line too long
+```
+# bad
+3   puts 'Hello Microverse ~~~~~~~~~~~' | <-- total characters in line > 50 
 
+# good
+
+3 puts 'Hello microverse ~~' | <-- Total characters in line < 50
+```
+
+👤 **Author**
+- GitHub: [@githubhandle](https://github.com/@uwadonat)
+- Twitter: [@twitterhandle](https://twitter.com/@uwamahoroDonat)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give and ⭐️ if you like this project!
+
+## Acknowledgments
+
+- StackOverflow
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
