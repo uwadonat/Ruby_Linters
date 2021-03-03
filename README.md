@@ -51,6 +51,8 @@ cd Ruby_Linters  ( to enter inside directory)
 Type in the following command to run the linter on a test file
 ```
 ruby bin/main.rb
+
+Note: When you are using Linux system, to make the file readable go on line 17 and remove: ../ 
 ```
 ### Testing
 Test class methods using RSpec by running the command in the root directory 
