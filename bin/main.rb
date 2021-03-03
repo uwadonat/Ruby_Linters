@@ -1,4 +1,4 @@
-require_relative '../lib/my_file_reader'
+require_relative '../lib/my_filereader'
 require_relative '../lib/messages'
 
 startt = FileReader.new
