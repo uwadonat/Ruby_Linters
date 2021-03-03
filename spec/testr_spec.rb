@@ -1,7 +1,7 @@
 # test spec/test
 
-require '../lib/my_file_reader'
-require '../lib/Messages'
+require_relative '../lib/my_file_reader'
+require_relative '../lib/Messages'
 describe FileReader do
   # testing check_valid_class_name method
 
