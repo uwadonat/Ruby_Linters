@@ -21,6 +21,22 @@ Additional description of the project and its features.
 
 - Ruby installed on local machine. Please go to [this](https://www.ruby-lang.org/en/documentation/installation/) link if you need to install it.
 
+But before testing using RSpec you can install the gem file by running the command
+```
+$ bundle install 
+```
+Also make sure you have bundler installed on your system, else run
+```
+$ gem install bundler 
+```
+or you simply install the the following directly using
+```
+$ gem install rspec 
+```
+Install colorize gem
+```
+$ gem install colorize 
+```
 ### Usage
 
 Clone this repository on the command promp or console using
@@ -42,25 +58,8 @@ Test class methods using RSpec by running the command in the root directory
 - cd spec/rspec testr_spec.rb
 
 ```
-But before testing using RSpec you can install the gem file by running the command
-```
-$ bundle install 
-```
-Also make sure you have bundler installed on your system, else run
-```
-$ gem install bundler 
-```
-or you simply install the the following directly using
-```
-$ gem install rspec 
-```
-Install colorize gem
-```
-$ gem install colorize 
-```
-
 # Type of errors checked with Examples
-## 1. Wrong class Name
+### 1. Wrong class Name
 
 Always class name should be capitalized
 
@@ -71,7 +70,7 @@ class calculator
 # good
 class Calculator
 ```
-#### 2. Space before and after operator
+### 2. Space before and after operator
 
 Always there must be empty space before and after operator
 
@@ -82,7 +81,7 @@ var=a+5
 # good
 var = a + 5
 ```
-#### 3. Extra empty line
+### 3. Extra empty line
 
 First line of the program should not be empty and no empty line allowed between statement except one empty line after end keyword
 
@@ -108,7 +107,7 @@ class Sample
     b = 10
 ```
 
-#### 4. open and closing tags
+### 4. open and closing tags
 Always make sure that there are pair of tags: opening tag and closing tag
 ```
 # bad
@@ -117,7 +116,7 @@ puts "Hello Ruby
 # good
 puts "Hello Ruby"
 ```
-#### 5. Line too long
+### 5. Line too long
 ```
 # bad
 3   puts 'Hello Microverse ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' | <-- total characters in line > 50 
