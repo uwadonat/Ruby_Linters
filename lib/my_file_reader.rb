@@ -83,10 +83,10 @@ class FileReader
   # check for incomplete tags
   def check_incomplete_tag
     @all_file.each_with_index do |line, index|
-      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ (/'\w/) && line !~ /\w'/
-      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ (/"\w/) && line !~ /\w"/
-      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ (/\w'/) && line !~ /'\w/
-      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ (/\w"/) && line !~ /"\w/
+      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ /'\w/ && line !~ /\w'/
+      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ /"\w/ && line !~ /\w"/
+      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ /\w'/ && line !~ /'\w/
+      puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ /\w"/ && line !~ /"\w/
     end
     @file_lines = []
   end
