@@ -21,7 +21,7 @@ Additional description of the project and its features.
 
 - Ruby installed on local machine. Please go to [this](https://www.ruby-lang.org/en/documentation/installation/) link if you need to install it.
 
-But before testing using RSpec you can install the gem file by running the command
+- install  different gems file needed by running the command
 ```
 $ bundle install 
 ```
