@@ -10,7 +10,6 @@ class Sample
   end
 end
 
-# Now using above class to create objects
-
+# Now using above class to create objects 
 object = Sample.new
 object.hello

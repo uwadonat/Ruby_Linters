@@ -79,6 +79,7 @@ class File_reader
            end
            
         end
+        @all_file = []
    end
 
     # check for incomplete tags
@@ -99,6 +100,7 @@ class File_reader
         end
       
       end
+      @all_file = []
     end
 
    # check for over limit lines
