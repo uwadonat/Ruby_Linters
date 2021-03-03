@@ -2,18 +2,18 @@
 
 require '../lib/my_file_reader'
 require '../lib/Messages'
-describe File_reader do
+describe FileReader do
   # testing check_valid_class_name method
 
   describe '#check_valid_class_name' do
     it 'return false and message if classname is not capitalized' do
-      line = File_reader.new
+      line = FileReader.new
 
       expect(line.check_valid_class_name).not_to eql('/A-Z/')
     end
 
     it 'display type of result' do
-      line = File_reader.new
+      line = FileReader.new
 
       expect(line.check_valid_class_name.class).to eql(Array)
     end
@@ -23,7 +23,7 @@ describe File_reader do
 
   describe '#check_incomplete_tag' do
     it ' return the missing tag' do
-      line = File_reader.new
+      line = FileReader.new
       a = '"'
       expect(line.check_incomplete_tag.include?(a)).not_to eql(true)
     end
@@ -33,13 +33,13 @@ describe File_reader do
 
   describe '#check_space' do
     it 'return true if any space before or after operator' do
-      line = File_reader.new
+      line = FileReader.new
 
       expect(line.check_space).not_to eql('true')
     end
 
     it 'display type of result' do
-      line = File_reader.new
+      line = FileReader.new
 
       expect(line.check_space.class).to eql(Array)
     end
@@ -49,7 +49,7 @@ describe File_reader do
 
   describe '#check_line_length' do
     it 'return true with message if line size is greater that 50' do
-      line = File_reader.new
+      line = FileReader.new
       expect(line.check_line_length.size).not_to eql(50)
     end
   end
@@ -58,7 +58,7 @@ describe File_reader do
 
   describe '#check_empty_line' do
     it 'return true and display a message when line is empty' do
-      line = File_reader.new
+      line = FileReader.new
       expect(line.check_empty_line.empty?).to eql(true)
     end
   end

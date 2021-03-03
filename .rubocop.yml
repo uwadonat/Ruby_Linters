@@ -2,11 +2,12 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
-
+    
+ 
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 120
+  Max: 220
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
@@ -52,3 +53,7 @@ Style/HashTransformValues:
 #   Enabled: false
 # Style/Metrics/PerceivedComplexity:
 #   Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
