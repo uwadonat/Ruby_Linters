@@ -1,7 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Ruby_Linters
-In this project we buld linters for testing Ruby file## 🛠 Installing <a name = "installing"></a>
+In this project we build linters for testing Ruby file. the project provides feedback about errors or warnings in code little by little. 
+The project was built completely with Ruby following all possible best practices. Rubocop was used as a code-linter alongside Gitflow to ensure I maintain good coding standards.
 
 ![screenshot](https://github.com/uwadonat/Ruby_Linters/blob/dev-feature1/images/screenshot1.JPG)
 
@@ -53,6 +54,10 @@ or you simply install the the following directly using
 ```
 $ gem install rspec 
 ```
+Install colorize gem
+```
+$ gem install colorize 
+```
 
 # Type of errors checked with Examples
 ## 1. Wrong class Name
@@ -77,7 +82,7 @@ var=a+5
 # good
 var = a + 5
 ```
-#### 3. Extra empty space
+#### 3. Extra empty line
 
 First line of the program should not be empty and no empty line allowed between statement except one empty line after end keyword
 
@@ -115,14 +120,17 @@ puts "Hello Ruby"
 #### 5. Line too long
 ```
 # bad
-3   puts 'Hello Microverse ~~~~~~~~~~~' | <-- total characters in line > 50 
+3   puts 'Hello Microverse ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' | <-- total characters in line > 50 
 
 # good
 
 3 puts 'Hello microverse ~~' | <-- Total characters in line < 50
 ```
 
-👤 **Author**
+# Author
+
+👤 **Donat UWAMAHORO**
+
 - GitHub: [@githubhandle](https://github.com/@uwadonat)
 - Twitter: [@twitterhandle](https://twitter.com/@uwamahoroDonat)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
