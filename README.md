@@ -7,7 +7,7 @@ In this project we buld linters for testing Ruby file## 🛠 Installing <a name 
 
 ![screenshot](https://github.com/uwadonat/Ruby_Linters/blob/dev-feature1/images/screenshot2.JPG)
 
-![screenshot](https://github.com/uwadonat/Ruby_Linters/blob/dev-feature1/images/screenshot.JPG)
+![screenshot](https://github.com/uwadonat/Ruby_Linters/blob/dev-feature1/images/screenshot3.JPG)
 
 Additional description of the project and its features.
 
