@@ -13,7 +13,7 @@ The project was built completely with Ruby following all possible best practices
 Additional description of the project and its features.
 ### Video link:
 
-(https://www.loom.com/share/7adae311e79a4df49cadde01d9469414?sharedAppSource=personal_library)
+https://www.loom.com/share/7adae311e79a4df49cadde01d9469414?sharedAppSource=personal_library
 
 ## Built With
 
