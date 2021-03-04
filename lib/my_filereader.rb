@@ -46,7 +46,6 @@ class FileReader
     puts @all_file
     @file_lines = []
   end
-  # check if class name is valid
 
   def check_valid_class_name
     @all_file.each_with_index do |line, index|
@@ -57,8 +56,6 @@ class FileReader
     end
     @all_file = []
   end
-
-  # check space before and after operator
 
   def check_space
     filereader
@@ -80,7 +77,6 @@ class FileReader
     @file_lines = []
   end
 
-  # check for incomplete tags
   def check_incomplete_tag
     @all_file.each_with_index do |line, index|
       puts "line:#{index + 1}:" + @mess.incomplete_tag.to_s.colorize(:light_red) if line =~ /'\w/ && line !~ /\w'/
@@ -91,7 +87,6 @@ class FileReader
     @file_lines = []
   end
 
-  # check over limit lines
   def check_line_length
     sum = 0
     @all_file.each_with_index do |line, index|
@@ -105,8 +100,6 @@ class FileReader
     end
     @all_file = []
   end
-
-  # check  empty line
 
   def check_empty_line
     line_counter = 0
