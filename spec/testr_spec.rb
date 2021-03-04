@@ -14,14 +14,14 @@ describe FileReader do
   end
 
   # testing check_valid_class_name method
-      
+
   describe '#check_valid_class_name' do
     it 'return false and message if classname is not capitalized' do
-    expect(line.check_valid_class_name).not_to eql('/A-Z/')
+      expect(line.check_valid_class_name).not_to eql('/A-Z/')
     end
 
     it 'display type of result' do
-    expect(line.check_valid_class_name.class).to eql(Array)
+      expect(line.check_valid_class_name.class).to eql(Array)
     end
   end
 
@@ -38,11 +38,11 @@ describe FileReader do
 
   describe '#check_space' do
     it 'return true if any space before or after operator' do
-     expect(line.check_space).not_to eql('true')
+      expect(line.check_space).not_to eql('true')
     end
 
     it 'display type of result' do
-     expect(line.check_space.class).to eql(Array)
+      expect(line.check_space.class).to eql(Array)
     end
   end
 
@@ -53,7 +53,7 @@ describe FileReader do
       expect(line.check_line_length.size).not_to eql(50)
     end
   end
- 
+
   # testing check_empty_line method
 
   describe '#check_empty_line' do
