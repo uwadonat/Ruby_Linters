@@ -11,6 +11,7 @@ The project was built completely with Ruby following all possible best practices
 ![screenshot](https://github.com/uwadonat/Ruby_Linters/blob/dev-feature1/images/screenshot3.JPG)
 
 Additional description of the project and its features.
+![Video](https://www.loom.com/share/7adae311e79a4df49cadde01d9469414)
 
 ## Built With
 

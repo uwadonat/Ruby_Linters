@@ -4,6 +4,15 @@ require_relative '../lib/my_filereader'
 require_relative '../lib/Messages'
 describe FileReader do
   let(:line) { FileReader.new }
+
+  # testing check_incomplete_tag method
+
+  describe '#file_display' do
+    it 'array of content' do
+      expect(line.file_display.class).to eql(Array)
+    end
+  end
+
   # testing check_valid_class_name method
       
   describe '#check_valid_class_name' do
@@ -44,7 +53,7 @@ describe FileReader do
       expect(line.check_line_length.size).not_to eql(50)
     end
   end
-
+ 
   # testing check_empty_line method
 
   describe '#check_empty_line' do

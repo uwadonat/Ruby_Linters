@@ -9,6 +9,6 @@ class Sample
     puts c
   end
 end
-# Now using above class to create objectsnnnnnnnnnnnnnnnnnnnnnnnnnn
+# Now using above class to create objects
 object = Sample.new
 object.hello
