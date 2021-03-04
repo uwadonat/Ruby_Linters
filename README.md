@@ -132,9 +132,9 @@ puts "Hello Ruby"
 
 👤 **Donat UWAMAHORO**
 
-- GitHub: [@githubhandle](https://github.com/@uwadonat)
-- Twitter: [@twitterhandle](https://twitter.com/@uwamahoroDonat)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/uwamahoro-donat-84b5bb1b7/)
+- GitHub: [@uwadonat](https://github.com/uwadonat)
+- LinkedIn: [Donat](www.linkedIn.com/in/uwamahoro-donat-84b5bb1b7/)
+- Twitter: [@uwamahoroDonat](https://twitter.com/uwamahoroDonat)
 
 ## 🤝 Contributing
 
