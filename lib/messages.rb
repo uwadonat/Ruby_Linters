@@ -1,6 +1,6 @@
 # class for error messages
 class Messages
-  attr_reader :bad_classname, :empty_line, :space_operator, :line_length, :incomplete_tag
+  attr_reader :bad_classname, :empty_line, :line_length, :incomplete_tag
 
   def initialize
     @bad_classname = 'class name must be capitalized.'
